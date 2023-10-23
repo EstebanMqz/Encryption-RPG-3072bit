@@ -21,7 +21,7 @@ rundll32.exe keymgr.dll,KRShowKeyMgr PATH.crd
 rem Encrypt.crd...
 ```
 
-GPG 3072-bit <i>(high)</i> encryption: <br>
+GPG 3072-bit <i>(high)</i> encryption: <br><br>
 
 1. <b>Create</b> encryption GPG key
 
@@ -41,7 +41,7 @@ the user will be prompted among others for: <br>
 
 <br>
 
-+ <i>key(s) deletion:  <br><br>
++ <i>Key(s) deletion:  <br><br>
 
     ``` bash
     gpg --delete-keys #Delete public keys.
@@ -51,7 +51,7 @@ the user will be prompted among others for: <br>
 </i>
 <br>
 
-1. Add encryption key to Environment <b>PATH</b> for further use:
+2. Add encryption key to Environment <b>PATH</b> for further use:
 
 ``` bash
 which gpg # Obtain key PATH.
@@ -60,22 +60,24 @@ export PATH=$PATH:/usr/bin/ && echo $PATH # Export GPG keys to System Env & conf
 
 <br>
 
-3. <b>GPG file(s) encryption</b> with key:
+3. <b>GPG file(s) Encryption</b> with key:
 
 ``` bash
 gpg --encrypt --recipient <Email> <path/filename>
 git rm <filename> -f #Keep Encrypted GPG file(s).
 ```
+
 <br>
 
-+ <i>&#9729; Cloud Back-up:
++ &#9729;<i> Cloud back-up: <br><br>
 
     ``` bash
     gpg --decrypt Key.crd.gpg > Key.crd
     rundll32.exe keymgr.dll,KRShowKeyMgr PATH.crd
     ```
     
-</br></i>
+</i>
+<br>
 
 ###### References:
 <font size="2"><i>Extensions</i></font><br>
