@@ -1,10 +1,10 @@
 <div align="center"><h2><b>3072-bit RSA public GPG Encryption keys</h2></div></b>
 
 ---
-<div align="left">
 
+<div align="right">
 
-[![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows)](https://www.microsoft.com/en-us/windows/) &nbsp; [![GPG Encryption](https://img.shields.io/badge/GPG_Encryption-0093D6?style=flat&amp;logo=gnu-privacy-guard&amp;logoColor=white)](https://www.gnupg.org/)
+[<img width="25px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logo_windows_simples.svg/2280px-Logo_windows_simples.svg.png?f=webp">](https://www.microsoft.com/en-us/windows/) &nbsp; [![GPG Encryption](https://img.shields.io/badge/GPG_Encryption-0093D6?style=flat&amp;logo=gnu-privacy-guard&amp;logoColor=white)](https://www.gnupg.org/)
 
 </div>
 
@@ -80,10 +80,12 @@ git rm <filename> -f #Keep Encrypted GPG file(s).
 <br>
 
 ###### References:
-<font size="2"><i>Extensions</i></font><br>
-+ [Git Windows crd](https://github.com/microsoft/Git-Credential-Manager-for-Windows)
-+ [.crd](https://github.com/microsoft/Git-Credential-Manager-for-Windows)<br>
-+ [.gpg](https://www.gnupg.org/gph/en/manual/x110.html)
 
+<font size="2">
+
++ [Credential Manager](https://github.com/microsoft/Git-Credential-Manager-for-Windows)<br>
++ [Git .crd](https://github.com/microsoft/Git-Credential-Manager-for-Windows)<br>
++ [GPG](https://www.gnupg.org)<br>
+</font>
 
 
