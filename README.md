@@ -1,10 +1,10 @@
-<div align="center"><h2><b>3072-bit RSA public GPG Encryption keys</h2></div></b>
+<div align="center"><h2><b>GPG Cryptographic Git Encryption Tool</h2></div></b>
 
 ---
-<div align="left">
 
+<div align="right">
 
-[![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows)](https://www.microsoft.com/en-us/windows/) &nbsp; [![GPG Encryption](https://img.shields.io/badge/GPG_Encryption-0093D6?style=flat&amp;logo=gnu-privacy-guard&amp;logoColor=white)](https://www.gnupg.org/)
+[<img width="25px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logo_windows_simples.svg/2280px-Logo_windows_simples.svg.png?f=webp">](https://www.microsoft.com/en-us/windows/) &nbsp; [![GPG Encryption](https://img.shields.io/badge/GPG_Encryption-0093D6?style=flat&amp;logo=gnu-privacy-guard&amp;logoColor=white)](https://www.gnupg.org/)
 
 </div>
 
@@ -23,9 +23,10 @@ rem Encrypt.crd...
 
 GPG 3072-bit <i>(high)</i> encryption: <br><br>
 
-1. <b>Create</b> encryption GPG key
+1. <b>Create</b> Encryption with <i>built-in</i> GPG:
 
 ``` bash
+gpg --version #GPG Installation
 gpg --gen-key # Create GPG key with default options.
 gpg --full-generate-key # Create GPG key with advanced options.
 gpg --list-keys # Retrieve GPG (Confirm).  
@@ -51,7 +52,7 @@ the user will be prompted among others for: <br>
 </i>
 <br>
 
-2. Add encryption key to Environment <b>PATH</b> for further use:
+1. Add Encryption key to Environment <b>PATH</b> for further use:
 
 ``` bash
 which gpg # Obtain key PATH.
@@ -80,10 +81,12 @@ git rm <filename> -f #Keep Encrypted GPG file(s).
 <br>
 
 ###### References:
-<font size="2"><i>Extensions</i></font><br>
-+ [Git Windows crd](https://github.com/microsoft/Git-Credential-Manager-for-Windows)
-+ [.crd](https://github.com/microsoft/Git-Credential-Manager-for-Windows)<br>
-+ [.gpg](https://www.gnupg.org/gph/en/manual/x110.html)
 
+<font size="2">
+
++ [Credential Manager](https://github.com/microsoft/Git-Credential-Manager-for-Windows)<br>
++ [Git .crd](https://github.com/microsoft/Git-Credential-Manager-for-Windows)<br>
++ [GPG](https://www.gnupg.org)<br>
+</font>
 
 
