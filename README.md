@@ -1,4 +1,4 @@
-<div align="center"><h2><b>GPG Cryptographic Git Encryption Tool</h2></div></b>
+<div align="center"><h1><b>GPG RSA Encryption</h1></div></b>
 
 ---
 
@@ -11,7 +11,7 @@
 There are plenty of time consuming encryption programs, nevertheless git provides most of the best encryptions right from your terminal. <br>
 This is due to the fact of git file(s) processing efficiency as you already know. <br>
 
-A file anyone must be wanting to encrypt if using Windows OS might be the .crd: <br>
+<i>(Optional:)</i> A file anyone must be wanting to encrypt if using Windows OS might be the .crd: <br>
 
 ``` cmd
 rem Back Up @ PATH
@@ -21,9 +21,16 @@ rundll32.exe keymgr.dll,KRShowKeyMgr PATH.crd
 rem Encrypt.crd...
 ```
 
-GPG 3072-bit <i>(high)</i> encryption: <br><br>
+<br><br>
 
-1. <b>Create</b> Encryption with <i>built-in</i> GPG:
+<div align="center">
+    <span style="font-size: 18px;">
+    
+<b>1026-4096 bits </b><i>(low &rarr; high)</i> GPG encryption: <br><br>
+</div>
+    </span>
+
+1. <b>Create</b> Git <i>built-in</i> Encryption:
 
 ``` bash
 gpg --version #GPG Installation
@@ -33,8 +40,7 @@ gpg --list-keys # Retrieve GPG (Confirm).
 ```
 <br>
 
-Either if selecting <i>Advanced / Default</i> options <i><b>Encryption key</i></b> <br>
-the user will be prompted among others for: <br>
+<i>Advanced / Default</i> options <i><b>Encryption key</i></b> user prompt (among others): <br>
 
 + `<Name>`
 + `<Email>`
@@ -42,7 +48,7 @@ the user will be prompted among others for: <br>
 
 <br>
 
-+ <i>Key(s) deletion:  <br><br>
++ <i>(Optional:)</i> Key(s) deletion: <br><br>
 
     ``` bash
     gpg --delete-keys #Delete public keys.
@@ -52,7 +58,7 @@ the user will be prompted among others for: <br>
 </i>
 <br>
 
-1. Add Encryption key to Environment <b>PATH</b> for further use:
+2. Add Encryption key to Environment <b>PATH</b> for further use:
 
 ``` bash
 which gpg # Obtain key PATH.
@@ -65,16 +71,16 @@ export PATH=$PATH:/usr/bin/ && echo $PATH # Export GPG keys to System Env & conf
 
 ``` bash
 gpg --encrypt --recipient <Email> <path/filename>
-git rm <filename> -f #Keep Encrypted GPG file(s).
+git rm <filename> -f #Delete unencrypted file to backup on cloud (Check local/remote .git).
 ```
 
 <br>
 
-+ &#9729;<i> Cloud back-up: <br><br>
++ <i>(Optional:)</i> &#9729;<i> Encrypted files Cloud back-up: <br><br>
 
     ``` bash
     gpg --decrypt Key.crd.gpg > Key.crd
-    rundll32.exe keymgr.dll,KRShowKeyMgr PATH.crd
+    rundll32.exe keymgr.dll,KRShowKeyMgr PATH.crd (Optional) 
     ```
     
 </i>
